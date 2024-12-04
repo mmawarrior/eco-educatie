@@ -1,0 +1,135 @@
+/* Navbar Styling */
+.navbar {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+    background-color: #00B0B9; /* Set the navbar color */
+}
+
+/* Logo Styling */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .logo img {
+    max-width: 60px;
+}
+
+.navbar .logo span {
+    font-size: 22px;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+/* Navbar Links */
+.navbar .nav-links {
+    list-style-type: none;
+     justify-content: flex-end;
+    gap: 10px;
+}
+
+.navbar .nav-links li {
+    margin: 0;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #00B0B9;
+    background-color: white;
+    transform: scale(1.1);
+}
+
+/* Ensure hamburger is displayed on smaller screens */
+.hamburger-menu {
+    display: none;  /* Initially hidden on large screens */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    width: 30px;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile view for navigation links */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;  /* Initially hidden */
+        position: absolute;
+        top: 110px;
+        right: 0;
+        background-color: #00B0B9;
+        width: 100%;
+        height: 25vh;  /* Adjust the height as needed */
+        text-align: center;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 40px;  /* Add space at the bottom */
+        z-index: 101;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    }
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+     }
+
+    .hamburger-menu {
+        display: flex; /* This will display the hamburger icon on mobile */
+        z-index: 102;
+    }
+
+    /* Hamburger to "X" animation */
+    .hamburger-menu.active span:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 9px;
+    }
+
+    .hamburger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -9px;
+    }
+}
+
+/* For larger screens (desktop and up) */
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: none; /* Hide hamburger menu on larger screens */
+    }
+
+    .nav-links {
+        display: flex;
+    }
+}
