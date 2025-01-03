@@ -1,0 +1,76 @@
+header {
+    background-color: #00B0B9;
+    padding: 20px 50px;
+    text-align: center;
+    margin-bottom: 40px; /* Increased space */
+}
+
+header .logo img {
+    max-width: 80px;
+}
+
+header .logo span {
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+.about {
+    background-color: #00B0B9;
+    color: white;
+    padding: 100px 10%; /* Increased padding for more space */
+    margin-bottom: 40px; /* Added more space between sections */
+}
+
+.about h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.about blockquote {
+    font-size: 24px;
+    font-style: italic;
+    color: #f4f4f4;
+    margin: 30px 0;
+    line-height: 1.8;
+}
+
+.about p {
+    font-size: 20px;
+    color: #f4f4f4;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.about ul {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #00B0B9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+
+    .about {
+        padding: 50px 20px;
+    }
+
+    .about h1 {
+        font-size: 40px;
+    }
+
+    .about blockquote, .about p {
+        font-size: 18px;
+    }
+}
