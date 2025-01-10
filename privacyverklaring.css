@@ -1,0 +1,108 @@
+/* Algemene instellingen voor de privacyverklaring pagina */
+#privacy-page {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#privacy-page header {
+    background-color: #2F7D32;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+#privacy-page header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#privacy-page header p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+#privacy-page main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#privacy-page h2 {
+    color: #2F7D32;
+    border-bottom: 2px solid #A0E7A0;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+#privacy-page a {
+    color: #2F7D32;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#privacy-page a:hover {
+    color: #1E5F25;
+    text-decoration: underline;
+}
+
+#privacy-page ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Footer Stijlen - Consistent met index.html */
+#privacy-page footer {
+    background-color: #2F7D32; /* Donkergroen voor duurzaamheid */
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#privacy-page .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#privacy-page footer p {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+#privacy-page footer p::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin: 10px auto 0;
+    border-radius: 3px;
+}
+
+#privacy-page footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#privacy-page footer a:hover {
+    text-decoration: underline;
+    color: #A0E7A0; /* Lichtgroen bij hover */
+}

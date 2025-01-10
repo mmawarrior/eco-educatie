@@ -1,0 +1,191 @@
+/* Algemene stijl voor de navigatiebalk */
+.navbar-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+/* Logo en tekst */
+.header__logo {
+    display: flex;
+    align-items: center; /* Zorgt voor verticale centrering */
+    gap: 15px; /* Ruimte tussen de laptop en de tekst */
+}
+
+.logo-img:first-child {
+    height: 90px; /* Maak het laptoplogo groter */
+    width: auto; /* Breedte blijft proportioneel */
+    object-fit: contain;
+}
+
+.logo-img:last-child {
+    height: 60px; /* Maak het tekstlogo kleiner */
+    width: auto;
+    object-fit: contain;
+    margin-left: -10px; /* Optionele aanpassing voor betere uitlijning */
+    transition: all 0.3s ease; /* Vloeiende overgangen */
+}
+
+/* Menu Items */
+.header__menu {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.header__menu li {
+    position: relative;
+}
+
+.header__menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.header__menu li a:hover {
+    color: #28a745;
+}
+
+.header__menu li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #28a745;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+.header__menu li a:hover::after {
+    width: 100%;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0; /* Verbergt de middelste lijn */
+}
+
+.hamburger.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .header__menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end; /* Links meer naar rechts */
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        padding: 20px 40px; /* Extra padding aan de rechterkant */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .header__menu.active {
+        display: flex;
+    }
+
+    .header__menu li {
+        margin: 10px 0;
+    }
+
+    .header__menu li a {
+        font-size: 16px;
+        text-align: right; /* Zorg dat de tekst rechts uitlijnt */
+        padding-right: 10px; /* Voeg padding toe aan de rechterkant */
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .logo-img:first-child {
+        height: 70px; /* Grotere laptop op mobiel */
+    }
+
+    .logo-img:last-child {
+        height: 40px; /* Kleinere tekst op mobiel */
+    }
+}
+
+
+/* Extra media query voor max 600px */
+@media (max-width: 600px) {
+    .logo-img:first-child {
+        height: 60px; /* Maak laptoplogo iets kleiner */
+    }
+
+    .logo-img:last-child {
+        height: 35px; /* Tekstlogo schaalt naar kleinere grootte */
+    }
+
+    .navbar {
+        padding: 15px 30px; /* Verminder de padding om ruimte te besparen */
+    }
+
+    .header__menu li a {
+        font-size: 14px; /* Kleinere menu-tekst */
+    }
+}
+
+/* Media query voor max 350px */
+@media (max-width: 350px) {
+    .logo-img:first-child {
+        height: 50px; /* Schaal het laptoplogo nog kleiner */
+    }
+
+    .logo-img:last-child {
+        height: 30px; /* Schaal het SVG-tekstlogo nog kleiner */
+    }
+
+    .navbar {
+        padding: 10px 20px; /* Compactere padding voor kleine schermen */
+    }
+
+    .header__menu li a {
+        font-size: 12px; /* Kleinere tekst voor menu-items */
+    }
+}
+
+/* Scroll animatie voor actieve links */
+.active-link {
+    color: #28a745 !important;
+    font-weight: bold;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}

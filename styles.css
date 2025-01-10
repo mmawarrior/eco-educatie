@@ -1,0 +1,131 @@
+/* Global styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+}
+
+/* Oranje balk */
+.header-orange {
+    background-color: #FF6600; /* Oranje kleur */
+    height: 30px; /* Verhoogde hoogte */
+    width: 100%; /* Zorgt ervoor dat het de volledige breedte beslaat */
+}
+
+/* Groene header-top */
+.header-top {
+    background-color: #A5E6A1; /* Groene kleur */
+    text-align: center;
+    font-size: 1rem; /* Grotere tekst */
+    color: #333;
+    padding: 15px 0; /* Meer padding voor een hogere balk */
+}
+
+.header-top .contact-info a {
+    color: #FF6600;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.header-top .contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Witte balk */
+.header-white {
+    background-color: white;
+    padding: 20px 0; /* Meer padding voor een hogere balk */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Meer schaduw */
+}
+
+/* Header content */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Ruimte tussen logo en tekst */
+}
+
+.logo-img {
+    width: 60px; /* Groter logo */
+    height: auto;
+}
+
+.logo-text {
+    font-size: 28px; /* Grotere tekst */
+    font-weight: 700;
+    color: #28a745; /* Duurzaam groen */
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-text:hover {
+    color: #48C774;
+}
+
+/* Navigatiebalk */
+.header__menu {
+    display: flex;
+    gap: 30px; /* Meer ruimte tussen menu-items */
+}
+
+.header__menu li {
+    list-style: none;
+}
+
+.header__menu li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.header__menu li a:hover {
+    color: #48C774;
+}
+
+/* Responsiviteit */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-text {
+        font-size: 24px;
+    }
+
+    .header__menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        width: 50px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+}

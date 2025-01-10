@@ -1,0 +1,65 @@
+/* Footer Algemene Styling */
+footer {
+    background-color: #2F7D32; /* Donkergroen voor duurzaamheid */
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1); /* Schaduw boven de footer voor diepte */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer Tekst */
+footer p {
+    font-size: 1.2rem;
+    color: #fff; /* Witte tekst voor contrast */
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+footer p::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin: 10px auto 0;
+    border-radius: 3px; /* Ronde hoeken voor een subtiele finish */
+}
+
+/* Hover Effect voor Footer Tekst */
+footer p:hover {
+    color: #cfe8cf; /* Lichtere groene tint bij hover */
+}
+
+footer p::after:hover {
+    background-color: #cfe8cf;
+}
+
+/* Footer Links */
+footer a {
+    color: #fff; /* Witte kleur voor de links */
+    text-decoration: none; /* Geen onderstreping */
+    margin: 0 8px; /* Ruimte tussen de links */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #A0E7A0; /* Lichtgroen bij hover */
+}
+
+/* Responsive Footer Styling */
+@media (max-width: 768px) {
+    footer p {
+        font-size: 1rem; /* Kleiner lettertype op mobiele apparaten */
+    }
+}
