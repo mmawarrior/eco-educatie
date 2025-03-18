@@ -1,0 +1,244 @@
+.services-container {
+    background-color: #ffffff; /* Zorg voor een lichte achtergrond */
+    padding: 50px 5%; /* Hou de padding subtiel */
+    border-radius: 8px; /* Minder afgeronde hoeken */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Zachtere schaduw */
+    border: 1px solid #e0e0e0; /* Dunne lichte rand */
+}
+.services-container h2 {
+    font-size: 36px;
+    color: #007d7d;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.services-intro {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+/* Service Items Grid */
+.services-items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    flex: 1;
+    max-width: 30%;
+    min-width: 280px;
+    margin: 0 auto;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #00b0b9;
+}
+
+.service-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.service-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007d7d;
+    margin-bottom: 10px;
+}
+
+.service-content p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+/* Services Section */
+.services-container {
+    background-color: #f5f5f5;
+    padding: 80px 5%;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.services-extra {
+    margin-top: 20px; /* Zorg voor balans met andere secties */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px; /* Iets minder padding */
+    background: #ffffff;
+    border-radius: 8px; /* Maak de hoeken subtiel afgerond */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* Minder sterke schaduw */
+    border: 1px solid #dcdcdc; /* Dunne en lichte border */
+    max-width: 800px; /* Beperk de breedte voor betere uitlijning */
+    margin-left: auto;
+    margin-right: auto; /* Centreer het element */
+}
+
+
+
+.services-extra h3 {
+    font-size: 26px;
+    color: #007d7d;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Lijstitems */
+.services-extra ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 30px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.services-extra ul li {
+    position: relative; /* Maakt het mogelijk om ::before correct te positioneren */
+    font-size: 16px; /* Tekstgrootte */
+    line-height: 1.6; /* Ruimte tussen regels */
+    display: flex; /* Flexbox voor nette uitlijning */
+    align-items: center; /* Horizontale uitlijning icoon en tekst */
+    margin-bottom: 15px; /* Ruimte tussen lijstitems */
+    padding-left: 50px; /* Genoeg ruimte voor het icoon */
+    word-wrap: break-word; /* Lange woorden breken netjes af */
+}
+
+.services-extra ul li strong {
+    font-weight: bold;
+    margin-right: 10px; /* Ruimte tussen de titel en beschrijving */
+    display: inline-block; /* Zorg voor nette uitlijning */
+    font-size: 14px; /* Zelfde grootte als tekst */
+}
+
+.services-extra ul li::before {
+    content: "✔"; /* Symbool voor het icoon */
+    font-size: 18px; /* Grootte van het icoon */
+    color: #00b0b9; /* Primaire kleur */
+    position: absolute;
+    left: 10px; /* Afstand tot de linkerkant */
+    top: 50%; /* Centreer verticaal */
+    transform: translateY(-50%); /* Fix voor verticale centrering */
+    border: 2px solid #00b0b9; /* Cirkelvormige rand */
+    border-radius: 50%; /* Zorg voor een ronde vorm */
+    width: 30px; /* Breedte van de cirkel */
+    height: 30px; /* Hoogte van de cirkel */
+    background-color: #fff; /* Witte achtergrond voor contrast */
+    display: flex; /* Gebruik flexbox voor nette uitlijning */
+    justify-content: center; /* Centreer symbool horizontaal */
+    align-items: center; /* Centreer symbool verticaal */
+}
+
+.cta-button {
+    background-color: #00b0b9; /* Primaire kleur */
+    color: #ffffff; /* Witte tekst */
+    padding: 15px 35px; /* Iets grotere padding */
+    font-size: 18px;
+    border-radius: 50px; /* Maak de knop rond */
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s ease; /* Voeg een hover-transitie toe */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtiele schaduw */
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #007d7d; /* Donkere tint bij hover */
+    transform: translateY(-3px); /* Beweging bij hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Verhoog de schaduw */
+}
+
+/* Responsieve Design */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .services-extra ul li {
+        font-size: 16px; /* Kleinere tekst */
+        padding-left: 50px;
+    }
+
+    .services-extra ul li::before {
+        width: 30px; /* Kleinere icooncirkel */
+        height: 30px;
+        font-size: 18px;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
+
+/* Mobiele telefoons */
+@media (max-width: 768px) {
+    .services-extra ul li {
+        font-size: 14px;
+        padding-left: 55px;
+    }
+
+    .services-extra ul li::before {
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 14px;
+        width: 100%; /* Volledige breedte */
+    }
+}
+
+/* Kleine schermen (kleine telefoons) */
+@media (max-width: 480px) {
+    .services-container h2 {
+        font-size: 22px;
+        margin-bottom: 20px; /* Iets minder ruimte */
+    }
+
+    .services-extra h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .services-extra ul li {
+        font-size: 12px; /* Nog kleinere tekst voor zeer kleine schermen */
+        padding-left: 40px; /* Verminder padding bij kleiner scherm */
+    }
+
+    .services-extra ul li::before {
+        width: 22px; /* Kleinere cirkel voor compactere weergave */
+        height: 22px;
+        font-size: 12px; /* Kleinere tekstgrootte voor icoon */
+        left: 5px; /* Minder ruimte links van icoon */
+    }
+
+    .services-extra ul li strong {
+        font-size: 12px; /* Pas grootte aan voor consistentie */
+    }
+    .cta-button {
+        font-size: 14px; /* Iets grotere knoptekst */
+        padding: 10px 20px; /* Verbeterde knophoogte en breedte */
+        margin-top: 20px;
+        width: 100%; /* Knop vult de breedte op mobiel */
+    }
+}

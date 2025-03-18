@@ -1,0 +1,142 @@
+/* Main Content Section */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 80px 5%;
+    background: linear-gradient(135deg, #00B0B9, #00c8c8);
+    color: white;
+    text-align: left;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.main-content .text-content {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.main-content .text-content h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.main-content .text-content ul {
+    margin-top: 20px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.main-content .text-content ul li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    line-height: 1.5;
+}
+
+.main-content .text-content ul li::before {
+    content: "✔";
+    color: #80f3f5;
+    font-size: 1.5rem;
+    margin-right: 12px;
+    display: inline-block;
+}
+
+.main-content .text-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.main-content .buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-content .buttons a {
+    background-color: #006d6d;
+    color: white;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.main-content .buttons a:hover {
+    background-color: #00B0B9;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.main-content .image-content {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.main-content .image-content img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 10%;
+    }
+
+    .main-content .text-content {
+        padding-right: 0;
+    }
+
+    .main-content .image-content {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .main-content .buttons a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content .text-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .main-content .text-content ul li {
+        font-size: 1rem;
+    }
+
+    .main-content .buttons a {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}

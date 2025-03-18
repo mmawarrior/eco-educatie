@@ -1,0 +1,160 @@
+/* Contact Section */
+.contact {
+    background-color:#00B0B9;
+    padding: 60px 0;
+}
+
+.content-container-contact {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-info {
+    flex: 1;
+    color: #333;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p i {
+    margin-right: 8px; /* Voeg hier de gewenste spatie toe */
+    color: #333; /* Als je de kleur van de pictogrammen wilt aanpassen */
+    font-size: 1.2rem; /* Pas de grootte van de pictogrammen aan indien nodig */
+}
+
+.contact-info a {
+    color: #000; /* Zwart voor links */
+    text-decoration: none; /* Verwijdert de onderstreping */
+ }
+
+.contact-info a:hover {
+    color: #004044; /* Donkere groene kleur bij hover */
+}
+
+.contact-info p i {
+    color: #000; /* Zwart voor iconen */
+}
+
+
+/* Contact Form Styling */
+.contact-form {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.contact-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #333;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #333;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-bottom-color: #004044;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: white;
+    color: #333;
+    padding: 12px 30px;
+    border: 2px solid #333;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn:hover {
+    background-color: #004044;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-container-contact {
+        flex-direction: column;
+        padding: 0 20px;
+        align-items: center;
+    }
+
+    .contact-form {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 15px 0;
+    }
+}
